@@ -74,6 +74,7 @@ public class TerrainGeneration : MonoBehaviour
     public void RemoveTile(Vector2 mouseWorldPos)
     {
         blockHandler.Break(mouseWorldPos);
+        
     }
 
     public bool PlaceTile(string itemName, Vector2 pos)

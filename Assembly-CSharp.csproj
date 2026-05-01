@@ -52,9 +52,14 @@
     <Compile Include="Assets\Asset growtopia\Scripts\Inventory\InventorySlot.cs" />
     <Compile Include="Assets\Asset growtopia\Scripts\IBlock.cs" />
     <Compile Include="Assets\Asset growtopia\Scripts\TerrainGeneration.cs" />
+    <Compile Include="Assets\Asset growtopia\Scripts\Pause.cs" />
     <Compile Include="Assets\Asset growtopia\Scripts\Cam.cs" />
+    <Compile Include="Assets\Asset growtopia\Scripts\Gems.cs" />
+    <Compile Include="Assets\Asset growtopia\Scripts\MenuUI.cs" />
+    <Compile Include="Assets\Asset growtopia\Scripts\Backsound.cs" />
     <Compile Include="Assets\Asset growtopia\Scripts\Inventory\ItemIconDatabase.cs" />
     <Compile Include="Assets\Asset growtopia\Scripts\PlayerMov.cs" />
+    <Compile Include="Assets\Asset growtopia\Scripts\bg.cs" />
     <Compile Include="Assets\Asset growtopia\Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\Asset growtopia\Scripts\Inventory\Hotbar.cs" />
     <Compile Include="Assets\Asset growtopia\Scripts\Block.cs" />

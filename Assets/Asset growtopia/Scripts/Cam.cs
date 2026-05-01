@@ -2,31 +2,27 @@ using UnityEngine;
 
 public class Cam : MonoBehaviour
 {   
-    public float moveSpeed;
     [Range(0,1)]
-    public float smoothTime;
+    public float smoothTime = 0.2f;
 
     public Transform playerTransform;
-    void FixedUpdate() {
-        Vector3 pos = GetComponent<Transform>().position;
 
-        pos.x = Mathf.Lerp(pos.x, playerTransform.position.x,smoothTime);
-        pos.y = Mathf.Lerp(pos.y, playerTransform.position.y,smoothTime);
-
-        GetComponent<Transform>().position = pos;
-
-
-
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        // langsung snap kamera ke posisi player saat game mulai
+        transform.position = new Vector3(
+            playerTransform.position.x,
+            playerTransform.position.y,
+            transform.position.z // biar z tetap
+        );
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void FixedUpdate() {
+        Vector3 pos = transform.position;
+
+        pos.x = Mathf.Lerp(pos.x, playerTransform.position.x, smoothTime);
+        pos.y = Mathf.Lerp(pos.y, playerTransform.position.y, smoothTime);
+
+        transform.position = pos;
     }
 }

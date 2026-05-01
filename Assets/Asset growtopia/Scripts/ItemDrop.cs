@@ -49,6 +49,8 @@ public class ItemDrop : MonoBehaviour
             pickedUp = true;
             Inventory.instance.AddItem(itemName);
             Destroy(gameObject);
+            GemManager.instance.AddGems(10);
+
         }
     }
 }
