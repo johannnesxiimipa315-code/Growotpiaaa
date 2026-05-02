@@ -2,6 +2,7 @@
 
 public class TerrainGeneration : MonoBehaviour
 {
+    public AudioSource hitTile;
     public int worldSize = 100;
     public float noiseFreq = 0.05f;
     public float heightMultiplier = 40f;
@@ -74,16 +75,18 @@ public class TerrainGeneration : MonoBehaviour
     public void RemoveTile(Vector2 mouseWorldPos)
     {
         blockHandler.Break(mouseWorldPos);
+       
         
     }
 
     public bool PlaceTile(string itemName, Vector2 pos)
     {
         Block block = new Block();
+        hitTile.Play(); 
 
         if(itemName == "Stone")
             return block.Place(stone,pos,"Stone",stoneDrop);
-
+             
         if(itemName == "Dirt")
             return block.Place(dirt,pos,"Dirt",dirtDrop);
 

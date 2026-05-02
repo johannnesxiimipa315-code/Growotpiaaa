@@ -14,7 +14,7 @@ public class HotbarUI : MonoBehaviour
     }
 
     void InputSlot()
-    {
+    {   
         if (Input.GetKeyDown(KeyCode.Alpha1)) selectedSlot = 0;
         if (Input.GetKeyDown(KeyCode.Alpha2)) selectedSlot = 1;
         if (Input.GetKeyDown(KeyCode.Alpha3)) selectedSlot = 2;
