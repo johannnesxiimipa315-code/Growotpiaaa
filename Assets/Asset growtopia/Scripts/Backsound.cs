@@ -6,7 +6,7 @@ public class Backsound : MonoBehaviour
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>(); // ambil AudioSource dari GameObject ini
+        audioSource = GetComponent<AudioSource>();  
         audioSource.loop = true;
         audioSource.Play();
     }

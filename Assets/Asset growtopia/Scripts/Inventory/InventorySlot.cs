@@ -9,4 +9,4 @@ public class InventorySlot
         itemName = name;
         amount = count;
     }
-}
+}   

@@ -23,7 +23,7 @@ public class TerrainGeneration : MonoBehaviour
     void Start()
     {
         seed = Random.Range(-10000, 10000);
-        blockHandler = new Block(); // kasih prefab lewat sini
+        blockHandler = new Block();  
         GenerateNoiseTexture();
         GenerateTerrain();
     }
