@@ -5,8 +5,8 @@ public class GemManager : MonoBehaviour
 {
     public static GemManager instance;
 
-    public int gems;              // nilai yang tampil
-    private float displayGems;    // untuk animasi
+    public int gems;              
+    private float displayGems;     
     private float targetGems;
 
     public TMP_Text gemText;
@@ -20,7 +20,7 @@ public class GemManager : MonoBehaviour
 
     void Update()
     {
-        // 🔥 animasi smooth (float ke float, aman)
+      
         displayGems = Mathf.MoveTowards(displayGems, targetGems, speed * Time.deltaTime);
 
         gems = Mathf.RoundToInt(displayGems);

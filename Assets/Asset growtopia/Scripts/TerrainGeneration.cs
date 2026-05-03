@@ -5,7 +5,7 @@ public class TerrainGeneration : MonoBehaviour
     public AudioSource hitTile;
     public int worldSize = 100;
     public float noiseFreq = 0.05f;
-    public float heightMultiplier = 40f;
+    public float heightMultiplier = 20f;
     public float seed;
     public Texture2D noiseTexture;
 

@@ -83,7 +83,7 @@ public class PlayerMov : MonoBehaviour
 
         mineTimer -= Time.deltaTime;
 
-        // MINING (klik kiri)
+       
         hit = Mouse.current.leftButton.isPressed;
 
         if (hit && InRange(snappedMouse) && mineTimer <= 0f)
@@ -92,7 +92,7 @@ public class PlayerMov : MonoBehaviour
             mineTimer = mineRate;
         }
 
-        // PLACE BLOCK (klik kanan)
+        
         placeTimer -= Time.deltaTime;
         place = Mouse.current.rightButton.isPressed;
 
